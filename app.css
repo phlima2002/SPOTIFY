@@ -13,20 +13,22 @@ header {
     background-color: black;
     justify-content: space-between;
     display: flex;
+    min-height: 54px;
 }
 
 .menu {
     height: 2em;
     width: 2em;
     display: flex;
-    padding-right: 1em;
-    padding-top: 0.7em;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
 .spotify {
     display: flex;
     height: 1.8em;
     width: 50px;
+    justify-content: center;
     padding-left: 30px;
     padding-top: 10px;
 
@@ -34,18 +36,16 @@ header {
 
 .azul {
     background-color: #1d75de;
-    height: 29em;
+    height: auto;
     width: 100%;
 
 }
 
 .azul h2 {
     color: white;
-    display: flex;
     padding-top: 1.5em;
     margin-left: 5%;
     font-size: 2em;
-    flex-wrap: wrap;
     font-weight: 700;
 
 }
@@ -53,7 +53,7 @@ header {
 .azul h3 {
     color: white;
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 50px;
     font-weight: 600;
 }
 
@@ -65,7 +65,10 @@ header {
     width: 90%;
     height: 4em;
     font-weight: 800;
+    display: inline-block;
 }
+
+
 
 .botaobaixo button {
     background-color: #1d75de;
@@ -73,8 +76,8 @@ header {
 }
 
 .botaocima button {
-    margin-top: 14%;
-    margin-bottom: 2%;
+    margin-top: 50px;
+    margin-bottom: 10px;
 
 }
 
@@ -91,9 +94,10 @@ header {
 .small {
     color: white;
     font-size: 12px;
-    margin-top: 10%;
-    margin-left: 4%;
+    margin-top: 40px;
+    margin-left: 10px;
     line-height: 20px;
+    padding-bottom: 25px;
 }
 
 .small a {
@@ -120,6 +124,7 @@ header {
     text-align: center;
 
 }
+
 
 .quadrado {
     height: 470px;
@@ -182,8 +187,9 @@ header {
     font-size: 14px;
     margin-left: 185px;
     height: 25px;
-    position: absolute;
     margin-top: 20px;
+    margin-bottom: 20px;
+    position: absolute;
 }
 
 .branco h3 {
@@ -278,7 +284,7 @@ h6 {
     padding-top: 35px;
     padding-left: 20px;
     font-size: 15px;
-    width: 50px;
+    width: 150px;
 }
 
 .final1 a:hover {
@@ -297,7 +303,7 @@ h6 {
     padding-top: 35px;
     padding-left: 20px;
     font-size: 15px;
-    width: 50px;
+    width: 100px;
 
 }
 
@@ -311,7 +317,7 @@ h6 {
     padding-top: 35px;
     padding-left: 20px;
     font-size: 15px;
-    width: 150px;
+    width: 200px;
 
 }
 
@@ -376,16 +382,30 @@ h6 {
     margin-right: 15px;
 }
 
+
+
 @media (min-width: 768px) {
+    .azul {
+        font-size: 1.25em;
+    }
+
+    .butoes {
+        display: flex;
+        flex-direction: row;
+    }
+
     .botaocima button {
         width: 175px;
         height: 50px;
+        margin-left: 40px;
 
     }
 
     .botaobaixo button {
         width: 150px;
         height: 50px;
+        margin-top: 50px;
+        margin-left: 15px;
     }
 
     .small {}
@@ -396,12 +416,12 @@ h6 {
     .quadrados {
         display: flex;
         flex-direction: row;
+
     }
 
     .quadrado {
         width: 253px;
         height: 768px;
-        padding-top: 50px;
     }
 
     .quadrado2 {
@@ -428,10 +448,65 @@ h6 {
         margin-bottom: 20px;
     }
 
-    .botao1 button {
+    .butoes1 {
         display: flex;
+        position: relative;
+        flex-direction: row;
 
     }
 
-    .botao2 button {}
+    .botao2 {
+        margin-top: 30px;
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    header {
+        height: 80px;
+    }
+
+    .spotify {
+        transform: scale(1.5);
+        margin: 16px;
+        padding: 16px 48px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+
+
+    }
+
+    .nav a {
+        margin-left: 30px;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+
+    }
+
+    .nav a:hover {
+        color: green;
+    }
+
+    .nav a:nth-child(3) {
+        border-right: 1px solid white;
+        padding-right: 20px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .nav {
+        position: fixed;
+        left: -100%;
+    }
 }
