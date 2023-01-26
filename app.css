@@ -175,7 +175,7 @@ header {
     font-weight: 700;
     height: 25px;
     margin-top: 20px;
-    position: absolute;
+    position: relative;
 }
 
 .botao2 button {
@@ -187,16 +187,16 @@ header {
     font-size: 14px;
     margin-left: 185px;
     height: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    position: absolute;
+    position: relative;
+    top: -25px;
 }
 
 .branco h3 {
     font-weight: 700;
     font-size: 25px;
     margin-left: 20px;
-    padding-top: 55px;
+    position: relative;
+    top: -15px;
 }
 
 .linha {
@@ -422,22 +422,32 @@ h6 {
     .quadrado {
         width: 253px;
         height: 768px;
+        position: relative;
+        top: -60px;
+        padding-top: 40px;
+
     }
 
     .quadrado2 {
         width: 253px;
         height: 768px;
+        padding-top: 40px;
     }
 
     .quadrado3 {
         width: 253px;
         height: 768px;
+        padding-top: 40px;
     }
 
     .quadrado4 {
         width: 253px;
         height: 768px;
+        padding-top: 40px;
     }
+
+
+
 
     .linha {
         width: 237px;
@@ -448,18 +458,21 @@ h6 {
         margin-bottom: 20px;
     }
 
-    .butoes1 {
-        display: flex;
+    .botao1 {
         position: relative;
-        flex-direction: row;
-
+        top: -40px;
     }
 
     .botao2 {
-        margin-top: 30px;
-
+        position: relative;
+        right: 165px;
+        width: 400px;
     }
 
+
+    .branco {
+        height: 1000px;
+    }
 }
 
 @media (min-width: 992px) {
