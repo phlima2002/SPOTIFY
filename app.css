@@ -105,6 +105,13 @@ header {
     min-height: 54px;
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
 .menu {
     height: 2em;
     width: 2em;
@@ -115,11 +122,10 @@ header {
 
 .spotify {
     display: flex;
-    height: 1.8em;
-    width: 50px;
-    justify-content: center;
-    margin-left: 35px;
-    margin-top: 15px;
+    height: 27px;
+    width: 89px;
+    margin-left: 10px;
+    margin-top: 20px;
 
 }
 
@@ -446,14 +452,13 @@ h6 {
     font-size: 10px;
     margin-left: 20px;
 
+
 }
 
-.small2 a {
-    text-decoration: none;
-    color: gray;
-    font-size: 10px;
-    margin-left: 20px;
+.small1 {
+    max-width: 1000px;
 }
+
 
 .small1 a:hover {
     color: green;
@@ -498,12 +503,7 @@ h6 {
     }
 
 
-    /*
-    como mexer ele na velocidade da navbar?
-    .spotify {
-        margin-left: 5%;
-    }
-*/
+
 }
 
 @media (min-width: 1200px) {
@@ -513,20 +513,68 @@ h6 {
         flex-direction: row;
     }
 
+    .small1 {
+        width: 600px;
+    }
+
+    .container {
+        max-width: 1170px;
+    }
+
+    .container2 {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        right: 850px;
+        max-height: 100px;
+        top: 350px;
+
+
+    }
+
+    .spotifyf {
+        position: relative;
+        left: 100px;
+        height: 40px;
+        bottom: 20px;
+    }
+
+
+
+    .container3 {
+        display: flex;
+        max-width: 1200px;
+        margin-left: 30%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .copyright {
+        position: relative;
+        left: 300px;
+    }
 
     .final1 {
         margin-left: 20%;
+
     }
+
+    .final2 {}
 
     .final3 {
         margin-left: 5%;
+
     }
 
-    .small1 {}
+    .icons {
+        font-size: 25px;
+    }
 
-    .small2 {}
+    .fa {
+        padding: 15px;
+        text-align: center;
+    }
 
-    .copyright {}
 
     .quadrados {
         display: flex;
@@ -542,7 +590,7 @@ h6 {
 
     .quadrado {
         width: 253px;
-        height: 768px;
+        height: 800px;
         position: relative;
         top: -60px;
         padding-top: 40px;
@@ -556,24 +604,24 @@ h6 {
 
     .quadrado2 {
         width: 253px;
-        height: 768px;
+        height: 800px;
         padding-top: 40px;
     }
 
     .quadrado2 .botaopreto {
         position: relative;
-        margin-top: 165px;
+        margin-top: 185px;
     }
 
     .quadrado3 {
         width: 253px;
-        height: 768px;
+        height: 800px;
         padding-top: 40px;
     }
 
     .quadrado4 {
         width: 253px;
-        height: 768px;
+        height: 800px;
         padding-top: 40px;
     }
 
@@ -615,10 +663,14 @@ h6 {
         height: 80px;
     }
 
+    .container {
+        max width: 970px;
+        height: 80px;
+    }
+
     .spotify {
-        transform: scale(1.5);
-        margin: 16px;
-        padding: 16px 48px;
+        height: 40px;
+        width: 132px;
     }
 
     .menu {
